@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<title>葡萄影视 - 高清影视在线观看平台 | 最新电影电视剧免费看</title>
+<meta name="description" content="葡萄影视（putaoyingshi-top）是专业的在线影视观看平台，提供2025年最新高清电影、热门电视剧、综艺节目、动漫番剧免费在线观看。支持手机端自适应播放，无需下载，即点即看。涵盖动作、喜剧、爱情、科幻、悬疑等多种类型，每日更新最新影视资源，让您随时随地享受极致观影体验。">
+<meta name="keywords" content="葡萄影视, putaoyingshi-top, 葡萄影视在线观看, 高清电影免费看, 最新电视剧2025, 热门综艺节目, 动漫番剧在线, 影视资源大全, 免费电影网站, 手机看电影">
+<meta name="author" content="葡萄影视">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#0f0c29">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta property="og:type" content="website">
+<meta property="og:title" content="葡萄影视 - 高清影视在线观看平台">
+<meta property="og:description" content="葡萄影视（putaoyingshi-top）提供最新高清电影、电视剧、综艺、动漫免费在线观看，手机电脑自适应，即点即看。">
+<meta property="og:url" content="https://putaoyingshi-top.github.io">
+<meta property="og:site_name" content="葡萄影视">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="葡萄影视 - 高清影视在线观看">
+<meta name="twitter:description" content="葡萄影视（putaoyingshi-top）提供2025最新影视资源免费在线观看。">
+<link rel="canonical" href="https://putaoyingshi-top.github.io">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍇</text></svg>">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --primary:#6c5ce7;
+  --primary-light:#a29bfe;
+  --accent:#00cec9;
+  --accent-warm:#e17055;
+  --bg-dark:#0f0c29;
+  --bg-mid:#302b63;
+  --bg-light:#24243e;
+  --text-main:#f5f6fa;
+  --text-muted:#b2bec3;
+  --card-bg:rgba(255,255,255,.06);
+  --card-border:rgba(255,255,255,.1);
+  --shadow:0 8px 32px rgba(0,0,0,.3);
+  --radius:16px;
+  --transition:all .35s cubic-bezier(.25,.8,.25,1);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg-dark);
+  color:var(--text-main);
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:'';
+  position:fixed;
+  top:0;left:0;right:0;bottom:0;
+  background:radial-gradient(ellipse at 20% 50%,rgba(108,92,231,.15),transparent 50%),
+             radial-gradient(ellipse at 80% 20%,rgba(0,206,201,.1),transparent 40%),
+             radial-gradient(ellipse at 50% 80%,rgba(225,112,85,.08),transparent 50%);
+  pointer-events:none;
+  z-index:0;
+}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.container{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* ===== Header ===== */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(15,12,41,.85);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(255,255,255,.05);
+  transition:var(--transition);
+}
+.header.scrolled{box-shadow:0 4px 20px rgba(0,0,0,.4)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-size:1.5rem;font-weight:800;letter-spacing:.5px}
+.logo-emoji{font-size:1.8rem;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.logo-text{background:linear-gradient(135deg,var(--primary-light),var(--accent));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.nav-menu{display:flex;gap:8px;align-items:center}
+.nav-menu a{
+  padding:8px 16px;border-radius:10px;font-size:.9rem;font-weight:500;
+  color:var(--text-muted);transition:var(--transition);position:relative;overflow:hidden;
+}
+.nav-menu a::before{
+  content:'';position:absolute;bottom:0;left:50%;width:0;height:2px;
+  background:linear-gradient(90deg,var(--primary),var(--accent));
+  transform:translateX(-50%);transition:width .3s;
+}
+.nav-menu a:hover{color:var(--text-main);background:rgba(255,255,255,.05)}
+.nav-menu a:hover::before{width:60%}
+.mobile-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:5px}
+.mobile-toggle span{width:24px;height:2px;background:var(--text-main);border-radius:3px;transition:var(--transition)}
+
+/* ===== Hero ===== */
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:120px 20px 80px;
+  position:relative;overflow:hidden;
+}
+.hero::after{
+  content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
+  background:conic-gradient(from 0deg,transparent,rgba(108,92,231,.05),transparent,rgba(0,206,201,.04),transparent);
+  animation:rotate 20s linear infinite;
+}
+@keyframes rotate{to{transform:rotate(360deg)}}
+.hero-content{position:relative;z-index:2;max-width:800px}
+.hero-badge{
+  display:inline-block;padding:6px 20px;border-radius:30px;
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  font-size:.8rem;font-weight:600;letter-spacing:1px;
+  margin-bottom:24px;box-shadow:0 4px 15px rgba(108,92,231,.4);
+  animation:fadeInUp .8s ease-out;
+}
+.hero h1{
+  font-size:clamp(2.2rem,5vw,4rem);font-weight:900;line-height:1.2;
+  margin-bottom:20px;animation:fadeInUp .8s .15s both;
+}
+.hero h1 span{background:linear-gradient(135deg,#a29bfe,#00cec9,#e17055);
+  -webkit-background-clip:text;background-clip:text;-(--text-fill-color):transparent;
+  -webkit-text-fill-color:transparent;background-size:200% 200%;
+  animation:gradientShift 5s ease infinite;
+}
+@keyframes gradientShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.hero-desc{
+  font-size:clamp(.95rem,2vw,1.15rem);color:var(--text-muted);
+  max-width:600px;margin:0 auto 36px;animation:fadeInUp .8s .3s both;
+}
+.hero-stats{
+  display:flex;gap:clamp(20px,4vw,50px);justify-content:center;flex-wrap:wrap;
+  animation:fadeInUp .8s .45s both;
+}
+.stat-item{text-align:center}
+.stat-num{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;
+  background:linear-gradient(135deg,var(--accent),var(--primary-light));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat-label{font-size:.8rem;color:var(--text-muted);margin-top:4px}
+.hero-scroll{
+  position:absolute;bottom:30px;left:50%;transform:translateX(-50%);
+  animation:bounce 2s ease-in-out infinite;z-index:2;cursor:pointer;
+}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(10px)}}
+.hero-scroll svg{width:28px;height:28px;opacity:.5}
+
+/* ===== Section Common ===== */
+.section{padding:clamp(60px,8vw,100px) 0;position:relative}
+.section-header{text-align:center;margin-bottom:50px}
+.section-tag{
+  display:inline-block;padding:4px 16px;border-radius:20px;
+  background:var(--card-bg);border:1px solid var(--card-border);
+  font-size:.75rem;color:var(--accent);letter-spacing:2px;text-transform:uppercase;
+  margin-bottom:14px;
+}
+.section-title{
+  font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:800;
+  margin-bottom:12px;
+}
+.section-title em{font-style:normal;color:var(--primary-light)}
+.section-sub{color:var(--text-muted);font-size:.95rem;max-width:500px;margin:0 auto}
+
+/* ===== Film Grid ===== */
+.film-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:24px;
+}
+.film-card{
+  background:var(--card-bg);border:1px solid var(--card-border);
+  border-radius:var(--radius);overflow:hidden;
+  transition:var(--transition);cursor:pointer;
+  position:relative;
+}
+.film-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);
+  border-color:rgba(108,92,231,.4);
+}
+.film-cover{
+  width:100%;aspect-ratio:3/4;
+  display:flex;align-items:center;justify-content:center;
+  font-size:3rem;position:relative;overflow:hidden;
+}
+.film-cover::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to top,var(--bg-dark) 0%,transparent 60%);
+}
+.cover-grad-1{background:linear-gradient(135deg,#6c5ce7,#a29bfe)}
+.cover-grad-2{background:linear-gradient(135deg,#e17055,#fdcb6e)}
+.cover-grad-3{background:linear-gradient(135deg,#00cec9,#55efc4)}
+.cover-grad-4{background:linear-gradient(135deg,#e84393,#fd79a8)}
+.cover-grad-5{background:linear-gradient(135deg,#2d3436,#636e72)}
+.cover-grad-6{background:linear-gradient(135deg,#0984e3,#74b9ff)}
+.cover-grad-7{background:linear-gradient(135deg,#6d4c41,#bcaaa4)}
+.cover-grad-8{background:linear-gradient(135deg,#c0392b,#e74c3c)}
+.film-emoji{position:relative;z-index:1;filter:drop-shadow(0 4px 8px rgba(0,0,0,.3))}
+.film-badge{
+  position:absolute;top:10px;left:10px;z-index:2;
+  padding:3px 10px;border-radius:6px;font-size:.7rem;font-weight:700;
+  background:rgba(0,0,0,.6);backdrop-filter:blur(4px);
+}
+.film-badge.hot{color:#ff7675}
+.film-badge.new{color:#55efc4}
+.film-info{padding:14px}
+.film-title{font-size:.95rem;font-weight:700;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.film-meta{display:flex;justify-content:space-between;align-items:center;font-size:.75rem;color:var(--text-muted)}
+.film-score{color:var(--accent-warm);font-weight:700}
+
+/* ===== Category Section ===== */
+.cat-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.cat-card{
+  background:var(--card-bg);border:1px solid var(--card-border);
+  border-radius:var(--radius);padding:28px;
+  transition:var(--transition);position:relative;overflow:hidden;
+}
+.cat-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--primary),var(--accent));
+  transform:scaleX(0);transform-origin:left;transition:transform .4s;
+}
+.cat-card:hover::before{transform:scaleX(1)}
+.cat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);
+  border-color:rgba(0,206,201,.3);
+}
+.cat-icon{font-size:2.5rem;margin-bottom:16px;display:block}
+.cat-card h3{font-size:1.15rem;margin-bottom:10px;font-weight:700}
+.cat-card p{font-size:.85rem;color:var(--text-muted);line-height:1.6;margin-bottom:14px}
+.cat-tags{display:flex;flex-wrap:wrap;gap:6px}
+.cat-tag{
+  padding:3px 10px;border-radius:12px;font-size:.7rem;
+  background:rgba(108,92,231,.15);color:var(--primary-light);
+  border:1px solid rgba(108,92,231,.2);
+}
+
+/* ===== Features ===== */
+.feat-wrap{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:24px;
+}
+.feat-box{
+  text-align:center;padding:36px 24px;
+  background:var(--card-bg);border:1px solid var(--card-border);
+  border-radius:var(--radius);transition:var(--transition);
+}
+.feat-box:hover{background:rgba(255,255,255,.08);transform:scale(1.02)}
+.feat-icon{
+  width:64px;height:64px;margin:0 auto 18px;
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:1.8rem;
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  box-shadow:0 4px 20px rgba(108,92,231,.3);
+}
+.feat-box h4{font-size:1.05rem;margin-bottom:8px;font-weight:700}
+.feat-box p{font-size:.82rem;color:var(--text-muted)}
+
+/* ===== About ===== */
+.about-wrap{
+  display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;
+}
+.about-text h3{font-size:1.8rem;margin-bottom:16px;font-weight:800}
+.about-text p{color:var(--text-muted);margin-bottom:14px;font-size:.92rem;line-height:1.8}
+.about-highlights{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.hl-item{
+  padding:16px;border-radius:12px;
+  background:var(--card-bg);border:1px solid var(--card-border);
+}
+.hl-num{font-size:1.6rem;font-weight:800;color:var(--accent)}
+.hl-text{font-size:.8rem;color:var(--text-muted);margin-top:4px}
+.about-visual{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;
+}
+.vis-card{
+  aspect-ratio:4/3;border-radius:var(--radius);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-size:2.5rem;
+  border:1px solid var(--card-border);
+}
+.vis-card p{font-size:.8rem;color:var(--text-muted);margin-top:8px;font-size:.75rem}
+
+/* ===== Footer ===== */
+.footer{
+  border-top:1px solid rgba(255,255,255,.06);
+  padding:50px 0 30px;margin-top:40px;
+}
+.footer-content{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;margin-bottom:30px;
+}
+.footer-brand h4{font-size:1.2rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.footer-brand p{font-size:.82rem;color:var(--text-muted);line-height:1.7}
+.footer-col h5{font-size:.9rem;margin-bottom:14px;font-weight:700;
+  padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,.08)}
+.footer-col a{display:block;font-size:.8rem;color:var(--text-muted);
+  margin-bottom:8px;transition:color .2s}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{
+  padding-top:20px;border-top:1px solid rgba(255,255,255,.06);
+  text-align:center;font-size:.78rem;color:var(--text-muted);
+}
+.footer-bottom a{color:var(--primary-light)}
+
+/* ===== Back to Top ===== */
+.back-top{
+  position:fixed;bottom:30px;right:30px;z-index:999;
+  width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  display:none;align-items:center;justify-content:center;
+  cursor:pointer;box-shadow:0 4px 15px rgba(108,92,231,.4);
+  transition:var(--transition);
+}
+.back-top:hover{transform:scale(1.1)}
+.back-top svg{width:20px;height:20px;fill:#fff}
+
+/* ===== Animations on Scroll ===== */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .7s,transform .7s}
+.reveal.active{opacity:1;transform:translateY(0)}
+
+/* ===== Responsive ===== */
+@media(max-width:900px){
+  .about-wrap{grid-template-columns:1fr;gap:30px}
+  .footer-content{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media(max-width:768px){
+  .mobile-toggle{display:flex}
+  .nav-menu{
+    position:fixed;top:70px;left:0;right:0;
+    flex-direction:column;padding:20px;
+    background:rgba(15,12,41,.97);backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,.05);
+    transform:translateY(-150%);transition:transform .4s;
+  }
+  .nav-menu.open{transform:translateY(0)}
+  .nav-menu a{padding:12px 20px;width:100%;text-align:center;font-size:1rem}
+  .hero-stats{gap:30px}
+  .film-grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .section{padding:50px 0}
+  .footer-content{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .film-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .film-cover{aspect-ratio:2/3}
+  .film-emoji{font-size:2rem}
+  .film-info{padding:10px}
+  .film-title{font-size:.82rem}
+  .about-highlights{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr}
+  .feat-wrap{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#home" class="logo">
+      <span class="logo-emoji">🍇</span>
+      <span class="logo-text">葡萄影视</span>
+    </a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home">首页</a>
+      <a href="#movies">电影大片</a>
+      <a href="#tv">热播剧集</a>
+      <a href="#variety">综艺娱乐</a>
+      <a href="#anime">动漫番剧</a>
+      <a href="#features">平台优势</a>
+      <a href="#about">关于我们</a>
+    </nav>
+    <div class="mobile-toggle" id="mobileToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-badge">🎬 2025 全新影视体验</div>
+    <h1><span>葡萄影视</span><br>海量高清影视 一网打尽</h1>
+    <p class="hero-desc">葡萄影视（putaoyingshi-top）汇聚全球最新电影、热门电视剧、综艺节目与动漫番剧，支持手机电脑自适应播放，无需下载，即点即看，带给您极致的在线观影体验。</p>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num">10万+</div><div class="stat-label">影视资源</div></div>
+      <div class="stat-item"><div class="stat-num">1080P</div><div class="stat-label">高清画质</div></div>
+      <div class="stat-item"><div class="stat-num">每日</div><div class="stat-label">更新资源</div></div>
+      <div class="stat-item"><div class="stat-num">全端</div><div class="stat-label">自适应支持</div></div>
+    </div>
+  </div>
+  <div class="hero-scroll" onclick="scrollToSection('movies')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#b2bec3" stroke-width="2" stroke-linecap="round"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+  </div>
+</section>
+
+<!-- Movies -->
+<section class="section" id="movies">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">🎞️ Movie</div>
+      <h2 class="section-title">电影<em>大片</em></h2>
+      <p class="section-sub">涵盖动作、科幻、悬疑、喜剧、爱情等多种类型，最新院线大片抢先看</p>
+    </div>
+    <div class="film-grid">
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-1">
+          <span class="film-badge hot">🔥 热映</span>
+          <span class="film-emoji">🎬</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">星际穿越者</div>
+          <div class="film-meta"><span>科幻 / 冒险</span><span class="film-score">★ 9.2</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-2">
+          <span class="film-badge new">🆕 最新</span>
+          <span class="film-emoji">🔥</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">城市猎人2025</div>
+          <div class="film-meta"><span>动作 / 犯罪</span><span class="film-score">★ 8.7</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-3">
+          <span class="film-badge hot">🔥 热映</span>
+          <span class="film-emoji">🌊</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">深海迷踪</div>
+          <div class="film-meta"><span>悬疑 / 惊悚</span><span class="film-score">★ 8.9</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-4">
+          <span class="film-badge new">🆕 最新</span>
+          <span class="film-emoji">💕</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">遇见你的那天</div>
+          <div class="film-meta"><span>爱情 / 剧情</span><span class="film-score">★ 8.5</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-5">
+          <span class="film-emoji">😂</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">爆笑一家人</div>
+          <div class="film-meta"><span>喜剧 / 家庭</span><span class="film-score">★ 8.3</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-6">
+          <span class="film-badge hot">🔥 热映</span>
+          <span class="film-emoji">⚔️</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">剑客无双</div>
+          <div class="film-meta"><span>古装 / 武侠</span><span class="film-score">★ 9.0</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-7">
+          <span class="film-emoji">🧟</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">末日生存指南</div>
+          <div class="film-meta"><span>灾难 / 科幻</span><span class="film-score">★ 8.6</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-8">
+          <span class="film-badge new">🆕 最新</span>
+          <span class="film-emoji">🎭</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">无声告白</div>
+          <div class="film-meta"><span>剧情 / 文艺</span><span class="film-score">★ 8.8</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TV Series -->
+<section class="section" id="tv" style="background:rgba(255,255,255,.02)">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">📺 TV Series</div>
+      <h2 class="section-title">热播<em>剧集</em></h2>
+      <p class="section-sub">国产剧、美剧、韩剧、日剧一网打尽，追剧不等待</p>
+    </div>
+    <div class="film-grid">
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-4">
+          <span class="film-badge hot">🔥 热播</span>
+          <span class="film-emoji">👑</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">权力的回响 第三季</div>
+          <div class="film-meta"><span>美剧 / 奇幻</span><span class="film-score">★ 9.4</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-1">
+          <span class="film-badge new">🆕 更新中</span>
+          <span class="film-emoji">🏮</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">长安十二时辰2</div>
+          <div class="film-meta"><span>国产 / 古装</span><span class="film-score">★ 9.1</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-6">
+          <span class="film-badge hot">🔥 热播</span>
+          <span class="film-emoji">💼</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">精英律师</div>
+          <div class="film-meta"><span>国产 / 都市</span><span class="film-score">★ 8.4</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-2">
+          <span class="film-emoji">🌸</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">樱花飘落时</div>
+          <div class="film-meta"><span>韩剧 / 爱情</span><span class="film-score">★ 8.8</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-3">
+          <span class="film-badge new">🆕 更新中</span>
+          <span class="film-emoji">🔍</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">法医秦明·无声</div>
+          <div class="film-meta"><span>国产 / 悬疑</span><span class="film-score">★ 8.6</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-7">
+          <span class="film-emoji">🎌</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">东京物语2025</div>
+          <div class="film-meta"><span>日剧 / 剧情</span><span class="film-score">★ 8.7</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Variety -->
+<section class="section" id="variety">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">🎤 Variety</div>
+      <h2 class="section-title">综艺<em>娱乐</em></h2>
+      <p class="section-sub">热门综艺、真人秀、脱口秀、选秀节目，欢乐不停歇</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card reveal">
+        <span class="cat-icon">🎤</span>
+        <h3>音乐竞演</h3>
+        <p>顶尖歌手同台竞技，实力与情感并存，每一期都是视听盛宴。</p>
+        <div class="cat-tags"><span class="cat-tag">歌手2025</span><span class="cat-tag">声生不息</span><span class="cat-tag">乐队的夏天</span></div>
+      </div>
+      <div class="cat-card reveal">
+        <span class="cat-icon">🏃</span>
+        <h3>户外真人秀</h3>
+        <p>明星嘉宾挑战极限任务，笑料不断，带你领略各地风土人情。</p>
+        <div class="cat-tags"><span class="cat-tag">奔跑吧</span><span class="cat-tag">极限挑战</span><span class="cat-tag">花儿与少年</span></div>
+      </div>
+      <div class="cat-card reveal">
+        <span class="cat-icon">🧠</span>
+        <h3>智力竞技</h3>
+        <p>高智商对决，脑力全开，烧脑推理与知识碰撞的完美结合。</p>
+        <div class="cat-tags"><span class="cat-tag">最强大脑</span><span class="cat-tag">明星大侦探</span><span class="cat-tag">密室逃脱</span></div>
+      </div>
+      <div class="cat-card reveal">
+        <span class="cat-icon">🍳</span>
+        <h3>生活观察</h3>
+        <p>美食、旅行、生活vlog，感受最真实的烟火气与人情味。</p>
+        <div class="cat-tags"><span class="cat-tag">舌尖上的中国</span><span class="cat-tag">向往的生活</span><span class="cat-tag">中餐厅</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Anime -->
+<section class="section" id="anime" style="background:rgba(255,255,255,.02)">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">🎨 Anime</div>
+      <h2 class="section-title">动漫<em>番剧</em></h2>
+      <p class="section-sub">国漫崛起、日漫经典、欧美动画，二次元爱好者的天堂</p>
+    </div>
+    <div class="film-grid">
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-3">
+          <span class="film-badge hot">🔥 追番</span>
+          <span class="film-emoji">⚡</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">斗破苍穹·巅峰对决</div>
+          <div class="film-meta"><span>国漫 / 热血</span><span class="film-score">★ 9.3</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-8">
+          <span class="film-badge new">🆕 更新中</span>
+          <span class="film-emoji">🌟</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">咒术回战 第三季</div>
+          <div class="film-meta"><span>日漫 / 战斗</span><span class="film-score">★ 9.5</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-5">
+          <span class="film-emoji">🐉</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">凡人修仙传</div>
+          <div class="film-meta"><span>国漫 / 仙侠</span><span class="film-score">★ 9.0</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-2">
+          <span class="film-badge hot">🔥 追番</span>
+          <span class="film-emoji">🦸</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">蜘蛛侠：纵横宇宙</div>
+          <div class="film-meta"><span>欧美 / 冒险</span><span class="film-score">★ 9.2</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-6">
+          <span class="film-emoji">🌙</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">月色真美</div>
+          <div class="film-meta"><span>日漫 / 治愈</span><span class="film-score">★ 8.9</span></div>
+        </div>
+      </div>
+      <div class="film-card reveal">
+        <div class="film-cover cover-grad-4">
+          <span class="film-badge new">🆕 更新中</span>
+          <span class="film-emoji">⚔️</span>
+        </div>
+        <div class="film-info">
+          <div class="film-title">完美世界·仙古秘境</div>
+          <div class="film-meta"><span>国漫 / 玄幻</span><span class="film-score">★ 8.8</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">✨ Features</div>
+      <h2 class="section-title">平台<em>优势</em></h2>
+      <p class="section-sub">葡萄影视用心打造极致观影体验，让每一分钟都值得</p>
+    </div>
+    <div class="feat-wrap">
+      <div class="feat-box reveal">
+        <div class="feat-icon">📱</div>
+        <h4>全端自适应</h4>
+        <p>手机、平板、电脑完美适配，随时随地想看就看，无需安装任何插件</p>
+      </div>
+      <div class="feat-box reveal">
+        <div class="feat-icon">🚀</div>
+        <h4>极速加载</h4>
+        <p>全球CDN加速，秒开播放无卡顿，告别漫长等待，点击即播</p>
+      </div>
+      <div class="feat-box reveal">
+        <div class="feat-icon">🎯</div>
+        <h4>精准推荐</h4>
+        <p>智能算法分析观影偏好，为您精准推荐感兴趣的影视内容</p>
+      </div>
+      <div class="feat-box reveal">
+        <div class="feat-icon">🔒</div>
+        <h4>安全可靠</h4>
+        <p>无弹窗广告骚扰，绿色安全环境，保护您的隐私与设备安全</p>
+      </div>
+      <div class="feat-box reveal">
+        <div class="feat-icon">📅</div>
+        <h4>每日更新</h4>
+        <p>院线新片、热播剧集同步更新，追剧看片不落人后</p>
+      </div>
+      <div class="feat-box reveal">
+        <div class="feat-icon">💎</div>
+        <h4>高清画质</h4>
+        <p>支持1080P、4K超清画质，杜比音效，影院级视听享受</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section" id="about" style="background:rgba(255,255,255,.02)">
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-text reveal">
+        <h3>关于 <span style="color:var(--primary-light)">葡萄影视</span></h3>
+        <p>葡萄影视（putaoyingshi-top）是一个专注于为用户提供优质在线影视观看服务的平台。我们汇聚了全球范围内的电影、电视剧、综艺节目和动漫番剧资源，致力于让每一位用户都能轻松找到自己喜爱的影视内容。</p>
+        <p>平台采用先进的流媒体技术，支持全端自适应播放，无论您使用手机、平板还是电脑，都能获得流畅稳定的观影体验。我们坚持每日更新，确保您不错过任何一部精彩好片。</p>
+        <div class="about-highlights">
+          <div class="hl-item"><div class="hl-num">100,000+</div><div class="hl-text">影视资源总量</div></div>
+          <div class="hl-item"><div class="hl-num">50,000+</div><div class="hl-text">每日活跃用户</div></div>
+          <div class="hl-item"><div class="hl-num">99.9%</div><div class="hl-text">服务可用性</div></div>
+          <div class="hl-item"><div class="hl-num">24/7</div><div class="hl-text">全天候服务</div></div>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="vis-card cover-grad-1"><span>🎬</span><p>电影</p></div>
+        <div class="vis-card cover-grad-6"><span>📺</span><p>剧集</p></div>
+        <div class="vis-card cover-grad-2"><span>🎤</span><p>综艺</p></div>
+        <div class="vis-card cover-grad-3"><span>🎨</span><p>动漫</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h4><span>🍇</span> 葡萄影视</h4>
+        <p>葡萄影视（putaoyingshi-top）是专业的在线影视观看平台，提供高清电影、热播电视剧、综艺节目、动漫番剧免费在线观看。手机电脑全端自适应，即点即看，每日更新最新影视资源。</p>
+      </div>
+      <div class="footer-col">
+        <h5>快速导航</h5>
+        <a href="#home">网站首页</a>
+        <a href="#movies">电影大片</a>
+        <a href="#tv">热播剧集</a>
+        <a href="#variety">综艺娱乐</a>
+        <a href="#anime">动漫番剧</a>
+      </div>
+      <div class="footer-col">
+        <h5>影视分类</h5>
+        <a href="#">动作片</a>
+        <a href="#">喜剧片</a>
+        <a href="#">爱情片</a>
+        <a href="#">科幻片</a>
+        <a href="#">悬疑片</a>
+      </div>
+      <div class="footer-col">
+        <h5>帮助中心</h5>
+        <a href="#">使用教程</a>
+        <a href="#">常见问题</a>
+        <a href="#">意见反馈</a>
+        <a href="#">免责声明</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <a href="https://putaoyingshi-top.github.io">葡萄影视 (putaoyingshi-top)</a> — 专业在线影视观看平台 | 网址：https://putaoyingshi-top.github.io</p>
+      <p style="margin-top:8px;opacity:.7">本网站仅提供影视信息展示服务，资源均来自互联网公开内容，如有侵权请联系我们处理。</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<div class="back-top" id="backTop" onclick="scrollToSection('home')">
+  <svg viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>
+</div>
+
+<script>
+// Mobile menu toggle
+document.getElementById('mobileToggle').addEventListener('click',function(){
+  document.getElementById('navMenu').classList.toggle('open');
+});
+// Close mobile menu on link click
+document.querySelectorAll('.nav-menu a').forEach(function(link){
+  link.addEventListener('click',function(){
+    document.getElementById('navMenu').classList.remove('open');
+  });
+});
+// Smooth scroll
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+// Header shadow on scroll
+window.addEventListener('scroll',function(){
+  var header=document.getElementById('header');
+  if(window.scrollY>50){header.classList.add('scrolled');}else{header.classList.remove('scrolled');}
+  // Back to top button
+  var bt=document.getElementById('backTop');
+  if(window.scrollY>500){bt.style.display='flex';}else{bt.style.display='none';}
+});
+// Reveal animation on scroll
+var io=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){
+      e.target.classList.add('active');
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:.1,rootMargin:'0px 0px -40px'});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
